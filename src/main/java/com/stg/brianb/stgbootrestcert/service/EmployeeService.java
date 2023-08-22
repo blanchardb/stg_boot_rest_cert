@@ -27,7 +27,7 @@ public class EmployeeService {
         this.employeeRepository.save(employee);
     }
 
-    public void deleteEmployee(Long id) {
+    public void deleteEmployeeById(Long id) {
         Optional<Employee> optional = employeeRepository.findById(id);
         Employee employee = optional.orElse(null);
         if(employee != null) {

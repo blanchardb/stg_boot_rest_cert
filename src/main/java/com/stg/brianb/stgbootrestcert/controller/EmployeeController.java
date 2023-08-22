@@ -30,6 +30,6 @@ public class EmployeeController {
 
     @DeleteMapping()
     public void deleteEmployee(@PathParam("id") Long id) {
-        this.employeeService.deleteEmployee(id);
+        this.employeeService.deleteEmployeeById(id);
     }
 }
